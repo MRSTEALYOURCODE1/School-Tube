@@ -74,7 +74,8 @@
     </style>
     <script>
         function enter() {
-            
+            var content = document.getElementById("demo").value;
+            localStorage.setItem("name", content);
         }
 
         window.onload = function myFunction() {
@@ -91,7 +92,6 @@
                     <div class="content-output"></div>
                     <textarea id="demo" class="content-input" placeholder="Note"></textarea>
                     <button onclick="enter()" id="save1-button" class="save-button">Add Note</button>
-                    <p id="demo"></p>
                 </div>
             ';
         }else{
